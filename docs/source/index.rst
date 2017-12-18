@@ -1,20 +1,45 @@
-.. tokeny documentation master file, created by
-   sphinx-quickstart on Mon Dec 18 19:43:16 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to tokeny's documentation!
+Welcome to Tokeny's documentation!
 ==================================
+
+Tokeny is an all inclusive Platform for Companies to securely issue and manage blockchain tokens.
+A complete investment website for Contributors to build a strong portfolio.
+
+Questions for ICO Organizers
+----------------------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   questions
 
+Crowdsale Features
+------------------
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   crowdsale
+
+Token Features
+--------------
+
+.. toctree::
+   :maxdepth: 2
+
+   token
+
+ICO Security Practices
+----------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   security
+
+Contact
+-------
+
+.. toctree::
+   :maxdepth: 2
+
+   contact
