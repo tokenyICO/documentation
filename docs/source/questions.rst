@@ -18,9 +18,9 @@ you. Therefore, you should plan properly before proceeding. We at Tokeny, are th
 you through that:
 
 * **When will your crowdsale begin?** This might sound like avery basic question but it is among the most important ones, and their are many factors you should consider before finalizing it:
-	* *Time to establish your idea in the market.*
+    * *Time to establish your idea in the market.*
     * *Cryptocurrency market stability.*
-    * *Status of your idea prototype.*  
+    * *Status of your idea prototype.*
 * **What should be the duration of your crowdsale?** Another important question reflecting your preparation, and available investors. It should be a duration apt for you, to raise an amount which will be sufficient to proceed with your project.
 * **Do you want the duration of your crowsale to be dependent on timestamp of a block or block number?** In ethereum blockchain the essence of a block is realized by tracking the latest block. Therefore crowdsale organizers can set the duration using either block timestamp or block number.Although, we would recommend using block timestamps for its proximity with human dates.
 * **Do you want a presale?** It can be used to attract special investors, who show early trust in your idea and are rewarded with subsidized token swap rates. If yes, answer the following: 
@@ -38,7 +38,7 @@ you through that:
     * *What should be your minimum ether/fiat cap?*
     * *What should be your maximum ether/fiat cap?*
     * *Do you want to accept multiple contributions from an investor or do you want a limit on number of investments from a single investor?*
-    * *Do you want an individual min/max cap for each investor? If yes, how much?* 
+    * *Do you want an individual min/max cap for each investor? If yes, how much?*
     * *Do you need a fixed token supply (max token cap) or you want them to be created every time someone buys your tokens, until your ether/fiat cap is reached? If latter is your choice, just decide the token swap rate considering the max ether/fiat cap and the duration of your crowdsale (also include, presale and milestone strategy, if any). Otherwise, answer the following:*
         * *What should be the total supply of your tokens? (Or max token cap)*
         * *What should be the swap rate of your tokens? Decide this on the basis of maximum ether/fiat cap and total supply of your tokens.*
