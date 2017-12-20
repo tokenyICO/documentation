@@ -22,9 +22,4 @@ A complete investment website for Contributors to build a strong portfolio.
 .. toctree::
    :maxdepth: 2
 
-   security
-
-.. toctree::
-   :maxdepth: 2
-
    contact
