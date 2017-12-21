@@ -319,49 +319,49 @@ Should not be used unless necessary, because it promotes centralization, as crow
 Here is an example of ``assignTokens``, ``confirmTokens`` and ``cancelTokens`` functions which can be used to implement this strategy in a simple manner: ::
 
     function assignTokens(
-            address _beneficiary,
-            uint _weiAmount,
-            uint _indexOfTransaction
-        )   public
-            onlyOwner
-            whenNotPaused
-            returns (bool)
-        {
-            require(_beneficiary != 0x0);
-            require(now >= startTime && now <= endTime);
+        address _beneficiary,
+        uint _weiAmount,
+        uint _indexOfTransaction
+    )   public
+        onlyOwner
+        whenNotPaused
+        returns (bool)
+    {
+        require(_beneficiary != 0x0);
+        require(now >= startTime && now <= endTime);
 
-            uint tokens = _weiAmount.mul(rate);
+        uint tokens = _weiAmount.mul(rate);
 
-            // update state
-            weiRaised = weiRaised.add(_weiAmount);
+        // update state
+        weiRaised = weiRaised.add(_weiAmount);
 
-            return TokenyTestToken(token).assign(_beneficiary, tokens, _indexOfTransaction);
-            TokenPurchase(msg.sender, _beneficiary, _weiAmount, tokens);
-        }
+        return TokenyTestToken(token).assign(_beneficiary, tokens, _indexOfTransaction);
+        TokenPurchase(msg.sender, _beneficiary, _weiAmount, tokens);
+    }
 
-        function confirmTokens(address _beneficiary, uint _indexOfTransaction)
-            public
-            onlyOwner
-            whenNotPaused
-            returns (bool)
-        {
-            require(endTime + 7 days > now); //should confirm within 7 days
-            return TokenyTestToken(token).confirm(_beneficiary, _indexOfTransaction);
-        }
+    function confirmTokens(address _beneficiary, uint _indexOfTransaction)
+        public
+        onlyOwner
+        whenNotPaused
+        returns (bool)
+    {
+        require(endTime + 7 days > now); //should confirm within 7 days
+        return TokenyTestToken(token).confirm(_beneficiary, _indexOfTransaction);
+    }
 
-        // weiAmount must be checked at backend to equal actual contribution
-        function cancelTokens(address _beneficiary, uint _weiAmount, uint _indexOfTransaction)
-            public
-            onlyOwner
-            whenNotPaused
-            returns (bool)
-        {
-            require(endTime + 7 days > now); //should cancel within 7 days
+    // weiAmount must be checked at backend to equal actual contribution
+    function cancelTokens(address _beneficiary, uint _weiAmount, uint _indexOfTransaction)
+        public
+        onlyOwner
+        whenNotPaused
+        returns (bool)
+    {
+        require(endTime + 7 days > now); //should cancel within 7 days
 
-            // update state
-            weiRaised = weiRaised.sub(_weiAmount);
-            return TokenyTestToken(token).cancel(_beneficiary, _indexOfTransaction);
-        }
+        // update state
+        weiRaised = weiRaised.sub(_weiAmount);
+        return TokenyTestToken(token).cancel(_beneficiary, _indexOfTransaction);
+    }
 
 Here ``TokenyTestToken`` is a token contract with functions ``assign``, ``cancel`` and ``confirm``. modifiers ``whenNotPaused`` and ``onlyOwner`` ensure that crowdsale is not paused and only owner is able to access these functions, they also use `SafeMath <https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/math/SafeMath.sol>`_ library to avoid integer underflow/overflow.
 Assigning and confirming logic is separated to deal with cancellation of bank payments. Suppose someone sends the crowdsale owner 150000 USD and asks for tokens, then owner can assign him tokens telling that his contribution has been noted in the blockchain, when the contribution reaches in his account (which could take upto 7 days) he can confirm user's contribution by distributing him tokens, otherwise he could cancel his contribution.
