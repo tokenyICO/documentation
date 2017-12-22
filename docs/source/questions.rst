@@ -20,7 +20,7 @@ you through that:
 **When will your crowdsale begin?**
 -----------------------------------
 
-This might sound like a very basic question but it is among the most important ones, and their are many factors you should consider before finalizing it:
+This might sound like a very basic question but it is among the most important ones, and their are three factors you must consider before finalizing it:
 
 * *Time to establish your idea in the market.*
 * *Cryptocurrency market stability.*
@@ -34,12 +34,12 @@ Another important question reflecting your preparation, and available investors.
 **Do you want the duration of your crowsale to be dependent on timestamp of a block or block number?** 
 ------------------------------------------------------------------------------------------------------
 
-In ethereum blockchain the essence of a block is realized by tracking the latest block. Therefore crowdsale organizers can set the duration using either block timestamp or block number.Although, we would recommend using block timestamps for its proximity with human dates.
+In ethereum blockchain the essence of a block is realized by tracking the latest block. Therefore crowdsale organizers can set the duration using either block timestamp or block number. Although, we would recommend using block timestamps for its proximity with human dates.
 
 **Do you want a presale?**
 --------------------------
 
-It can be used to attract special investors, who show early trust in your idea and are rewarded with subsidized token swap rates. If yes, answer the following: 
+It can be used to attract special investors, who show early trust in your idea and are rewarded with subsidized token swap rates. If yes is your answer, follow questions below: 
 
 * *When will it begin?*
 * *What will be it’s duration?*
@@ -64,13 +64,13 @@ We recommend ether because crowdsale ether to fiat exchange rates are subjected 
 **Do you want a Cap?**
 ----------------------
 
-A Cap helps you choose when to stop and when to surrender. It likewise regulates control and demonstrates that you're no tightwad, at last building a relationship of trust with your customers. This is one of those inquiries that you should reply with a "yes". There are different inquiries related with capping you ought to consider questions mentioned below.
+A Cap helps you choose when to stop and when to surrender. It likewise regulates control and demonstrates that you're no tightwad, at last building a relationship of trust with your customers. This is one of those inquiries that you should reply with a "yes". There are different inquiries related with capping, you ought to consider below.
 
 * *What should be your minimum ether/fiat cap?*
 * *What should be your maximum ether/fiat cap?*
 * *Do you want to accept multiple contributions from an investor or do you want a limit on number of investments from a single investor?*
 * *Do you want an individual min/max cap for each investor? If yes, how much?*
-* *Do you need a fixed token supply (max token cap) or you want them to be created every time someone buys your tokens, until your ether/fiat cap is reached? If latter is your choice, just decide the token swap rate considering the max ether/fiat cap and the duration of your crowdsale (also include, presale and milestone strategy, if any). Otherwise, answer the questions below.*
+* *Do you need a fixed token supply (max token cap) or you want them to be created every time someone buys your tokens, until your ether/fiat cap is reached? If latter is your choice, just decide the token swap rate considering the max ether/fiat cap and the duration of your crowdsale (also include, presale and milestone strategy, if any) and skip to the next subhead question. Otherwise, answer the questions below.*
 * *What should be the total supply of your tokens? (Or max token cap)*
 * *What should be the swap rate of your tokens? Decide this on the basis of maximum ether/fiat cap and total supply of your tokens.*
 * *If required total supply is not reached during the crowdsale, i.e. some tokens are left even after crowdsale ends, what should happen to them? Should they be sent to some reserve or they’re to be distributed among crowdsale owners. Another strategy is Airdrop, where left over tokens will be distributed among token holders according to their fair share after crowdsale.*
